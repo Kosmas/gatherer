@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Project do
+  let(:project) { Project.new }
+  let(:task) { Task.new }
+
   it 'considers a project with no test to be done' do
-    project = Project.new
-    expect(project.done?).to be_truthy
+    expect(project).to be_done
   end
 
   it 'knows that a project with an incomplete test is not done' do
-    project = Project.new
-    task = Task.new
     project.tasks << task
-    expect(project.done?).to be_falsy
+    expect(project).not_to be_done
   end
 end
