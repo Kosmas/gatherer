@@ -14,4 +14,8 @@ class ProjectsController < ApplicationController
       render :new
     end
   end
+
+  def index
+    @projects = Project.all
+  end
 end
