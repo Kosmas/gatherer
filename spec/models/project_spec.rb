@@ -69,4 +69,10 @@ RSpec.describe Project do
       expect(project).to be_on_schedule
     end
   end
+
+  it 'stubs and object' do
+    project = Project.new(name: 'Project Greenlight')
+    allow(project).to receive(:name)
+    expect(project.name).to be_nil
+  end
 end
