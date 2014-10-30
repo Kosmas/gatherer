@@ -7,6 +7,10 @@ class Project < ActiveRecord::Base
     21
   end
 
+  def user_count
+    4
+  end
+
   def incomplete_tasks
     tasks.reject(&:complete?)
   end
