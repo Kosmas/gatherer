@@ -24,4 +24,8 @@ class Task < ActiveRecord::Base
   def small?
     size <= 1
   end
+
+  def self.complete
+    where(['completed_at < ?', Time.current])
+  end
 end
