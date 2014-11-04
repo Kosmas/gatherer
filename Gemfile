@@ -41,6 +41,11 @@ gem 'spring',        group: :development
 # Add RSpec
 group :development, :test do
   gem 'rspec-rails', '~> 3.1'
+  gem 'mocha', require: false
+end
+
+group :test do
+  gem 'minitest-rails-capybara', '~> 2.1.1'
 end
 
 # Add capybara
