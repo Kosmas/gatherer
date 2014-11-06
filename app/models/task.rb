@@ -1,4 +1,5 @@
 class Task < ActiveRecord::Base
+  belongs_to :project
 
   def mark_completed(date = nil)
     self.completed_at = (date || Time.current)
