@@ -56,3 +56,6 @@ group :development, :test do
   gem 'cucumber-rails', '~> 1.4.2', require: false
   gem 'database_cleaner', '~> 1.3.0'
 end
+
+# Add devise
+gem 'devise', '~> 3.4.1'
