@@ -1,6 +1,13 @@
 require 'rails_helper'
 
+include Warden::Test::Helpers
+
 describe 'adding projects' do
+  fixtures :all
+
+  before(:each) do
+    login_as User.create!(email: 'rspec@example.com', password: 'password')
+  end
 
   it 'allows a user to create a project with tasks' do
     visit new_project_path
