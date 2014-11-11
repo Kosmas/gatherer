@@ -2,6 +2,8 @@ class Project < ActiveRecord::Base
   validates :name, presence: true
 
   has_many :tasks, -> { order 'project_order ASC' }
+  has_many :roles
+  has_many :users, through: :roles
 
   def self.velocity_length_in_days
     21
