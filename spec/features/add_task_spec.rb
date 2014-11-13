@@ -6,7 +6,8 @@ describe 'adding a new task' do
   fixtures :all
 
   before(:each) do
-    login_as User.create!(email: 'rspec@example.com', password: 'password')
+    projects(:bluebook).roles.create(user: users(:user))
+    login_as users(:user)
   end
 
   it 'can add and reorder a task' do
