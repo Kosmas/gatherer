@@ -30,5 +30,9 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    unless current_user.can_view?(@porject)
+      redirect_to new_user_session_path
+      return
+    end
   end
 end
