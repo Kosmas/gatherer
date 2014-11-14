@@ -14,4 +14,19 @@ describe User do
     user.roles.create(project: project)
     expect(user.can_view?(project)).to be_truthy
   end
+
+  describe 'public roles' do
+    let(:user) { User.new }
+    let(:project) { Project.new }
+
+    it 'allows an admin to view a project' do
+      user.admin = true
+      expect(user.can_view?(project)).to be_truthy
+    end
+
+    it 'allows a poblic project to be seen by anyone' do
+      project.public = true
+      expect(user.can_view?(project)).to be_truthy
+    end
+  end
 end
