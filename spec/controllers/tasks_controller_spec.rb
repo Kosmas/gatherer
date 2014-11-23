@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe TasksController, :type => :controller do
 
-  let(:user) { User.create!(email: 'rspec@example.com', pssword: 'password') }
+  let(:user) { User.create!(email: 'rspec@example.com', password: 'password') }
 
   before(:example) do
     sign_in(user)
@@ -26,6 +26,18 @@ RSpec.describe TasksController, :type => :controller do
       expect(email.subject).to eq('A task has been completed')
       expect(email.to).to eq(['monitor@tasks.com'])
       expect(email.body.to_s).to match(/Write section on testing mailers/)
+    end
+  end
+
+  describe 'POST create' do
+    fixtures :all
+    let(:project) { Project.create!(name: 'Project Runway') }
+
+    it 'allows a user to create a task for a project they belong to' do
+      user.projects << project
+      user.save!
+      post :create, task: { project_id: project.id, title: 'just do it', size: '1' }
+      expect(project.reload.tasks.first.title).to eq('just do it')
     end
   end
 end
