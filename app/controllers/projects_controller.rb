@@ -5,7 +5,9 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @action = CreatesProject.new(name: params[:project][:name], task_string: params[:project][:tasks])
+    @action = CreatesProject.new(name: params[:project][:name], 
+                                 task_string: params[:project][:tasks] || "", 
+                                 users: [current_user])
     success = @action.create
     if success
       redirect_to projects_path
@@ -16,7 +18,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.all
+    @projects = ProjectPresenter.from_project_list(current_user.visible_projects)
   end
 
   def update

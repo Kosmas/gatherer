@@ -1,9 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe ProjectsController, :type => :controller do
+  let(:user) { User.create!(email: 'rspec@example.com', password: 'password') }
 
   before(:example) do
-    sign_in User.create!(email: 'rspec@example.com', password: 'password')
+    sign_in (user)
   end
 
   describe 'POST create' do
@@ -16,7 +17,7 @@ RSpec.describe ProjectsController, :type => :controller do
     it 'creates a project (mock version)' do
       fake_action = instance_double(CreatesProject, create: true)
       expect(CreatesProject).to receive(:new)
-          .with(name: 'Runway', task_string: 'start something:2')
+          .with(name: 'Runway', task_string: 'start something:2', users: [user])
           .and_return(fake_action)
       post :create, project: {name: 'Runway', tasks: 'start something:2'}
       expect(response).to redirect_to(projects_path)
@@ -60,6 +61,18 @@ RSpec.describe ProjectsController, :type => :controller do
       controller.current_user.stubs(can_view?: false)
       get :show, id: project.id
       expect(response).to redirect_to(new_user_session_path)
+    end
+  end
+
+  describe 'GET index' do
+    it 'displays all projects correctly' do
+      user = User.new
+      project = Project.new(name: 'Project Greenlight')
+      controller.expects(:current_user).returns(user)
+      user.expects(:visible_projects).returns([project])
+      get :index
+      #expect([project]).to eq(user.visible_projects)
+      assert_equal assigns[:projects].map(&:__getobj__), [project]
     end
   end
 end
