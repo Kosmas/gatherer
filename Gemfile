@@ -59,3 +59,8 @@ end
 
 # Add devise
 gem 'devise', '~> 3.4.1'
+
+# External service testing
+gem 'twitter', '~> 5.13.0'
+gem 'vcr', '~> 2.9.3', group: :test
+gem 'webmock', '~> 1.20.4', group: :test
