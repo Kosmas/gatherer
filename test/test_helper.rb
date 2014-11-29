@@ -18,3 +18,8 @@ end
 class ActionController::TestCase
   include Devise::TestHelpers
 end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'test/vcr'
+  c.hook_into :webmock
+end
