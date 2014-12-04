@@ -64,3 +64,8 @@ gem 'devise', '~> 3.4.1'
 gem 'twitter', '~> 5.13.0'
 gem 'vcr', '~> 2.9.3', group: :test
 gem 'webmock', '~> 1.20.4', group: :test
+
+# Add javascript testing
+group :development, :test do
+  gem 'jasmine-rails', '~> 0.10.2'
+end
