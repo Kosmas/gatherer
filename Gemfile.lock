@@ -229,7 +229,7 @@ GEM
       simple_oauth (~> 0.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.0)
+    uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     vcr (2.9.3)
@@ -263,6 +263,6 @@ DEPENDENCIES
   sqlite3
   turbolinks (~> 2.5.3)
   twitter (~> 5.14.0)
-  uglifier (~> 2.7.0)
+  uglifier (~> 2.7.1)
   vcr (~> 2.9.3)
   webmock (~> 1.20.4)
