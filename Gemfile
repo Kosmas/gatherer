@@ -61,7 +61,7 @@ end
 gem 'devise', '~> 3.4.1'
 
 # External service testing
-gem 'twitter', '~> 5.14.0'
+gem 'twitter', github: 'sferik/twitter'
 gem 'vcr', '~> 2.9.3', group: :test
 gem 'webmock', '~> 1.21.0', group: :test
 
