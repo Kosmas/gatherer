@@ -261,7 +261,7 @@ DEPENDENCIES
   devise (~> 3.5.1)
   jasmine-rails (~> 0.10.8)
   jbuilder (~> 2.3.0)
-  jquery-rails (~> 4.0.3)
+  jquery-rails (~> 4.0.4)
   minitest-rails-capybara (~> 2.1.1)
   mocha
   rails (= 4.2.2)
