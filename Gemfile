@@ -67,5 +67,5 @@ gem 'webmock', '~> 1.22.3', group: :test
 
 # Add javascript testing
 group :development, :test do
-  gem 'jasmine-rails', '~> 0.12.1'
+  gem 'jasmine-rails', '~> 0.12.2'
 end
