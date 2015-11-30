@@ -71,4 +71,4 @@ group :development, :test do
 end
 
 # Nokogiri security update
-gem 'nokogiri', '~> 1.6.6.4'
+gem 'nokogiri', '~> 1.6.7'
