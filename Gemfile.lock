@@ -52,7 +52,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
     arel (6.0.3)
     bcrypt (3.1.10)
     buftok (0.2.0)
@@ -245,8 +245,8 @@ GEM
     vcr (3.0.1)
     warden (1.2.4)
       rack (>= 1.0)
-    webmock (1.22.5)
-      addressable (< 2.4.0)
+    webmock (1.22.6)
+      addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
     xpath (2.0.0)
@@ -277,7 +277,7 @@ DEPENDENCIES
   twitter!
   uglifier (~> 2.7.2)
   vcr (~> 3.0.1)
-  webmock (~> 1.22.5)
+  webmock (~> 1.22.6)
 
 BUNDLED WITH
    1.10.6
