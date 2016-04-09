@@ -67,7 +67,7 @@ gem 'webmock', '~> 1.24.2', group: :test
 
 # Add javascript testing
 group :development, :test do
-  gem 'jasmine-rails', '~> 0.12.3'
+  gem 'jasmine-rails', '~> 0.12.4'
 end
 
 # Nokogiri security update
