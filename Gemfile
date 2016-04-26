@@ -63,7 +63,7 @@ gem 'devise', '~> 4.0.1'
 # External service testing
 gem 'twitter', github: 'sferik/twitter'
 gem 'vcr', '~> 3.0.1', group: :test
-gem 'webmock', '~> 1.24.5', group: :test
+gem 'webmock', '~> 2.0.0', group: :test
 
 # Add javascript testing
 group :development, :test do
