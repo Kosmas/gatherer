@@ -45,7 +45,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest-rails-capybara', '~> 2.1.1'
+  gem 'minitest-rails-capybara', '~> 2.1.2'
 end
 
 # Add capybara
