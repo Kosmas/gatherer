@@ -251,7 +251,7 @@ GEM
     vcr (3.0.1)
     warden (1.2.6)
       rack (>= 1.0)
-    webmock (2.0.1)
+    webmock (2.0.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -283,7 +283,7 @@ DEPENDENCIES
   twitter!
   uglifier (~> 3.0.0)
   vcr (~> 3.0.1)
-  webmock (~> 2.0.1)
+  webmock (~> 2.0.2)
 
 BUNDLED WITH
    1.11.2
