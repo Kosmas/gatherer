@@ -248,7 +248,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    vcr (3.0.1)
+    vcr (3.0.3)
     warden (1.2.6)
       rack (>= 1.0)
     webmock (2.0.2)
@@ -282,7 +282,7 @@ DEPENDENCIES
   turbolinks (~> 2.5.3)
   twitter!
   uglifier (~> 3.0.0)
-  vcr (~> 3.0.1)
+  vcr (~> 3.0.3)
   webmock (~> 2.0.2)
 
 BUNDLED WITH
