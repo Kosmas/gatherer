@@ -1,12 +1,12 @@
 GIT
-  remote: git://github.com/sferik/twitter.git
-  revision: 1d12e149990ea57b42fadbb0e20cf8be35c6f41f
+  remote: https://github.com/sferik/twitter.git
+  revision: 60eb2569fcafd9020a0bd280df38dcbfc343d1c8
   specs:
     twitter (5.15.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.11)
-      http (~> 1.0)
+      http (~> 2.0)
       http-form_data (~> 1.0)
       http_parser.rb (~> 0.6.0)
       memoizable (~> 0.4.0)
@@ -99,7 +99,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    domain_name (0.5.20160216)
+    domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -108,7 +108,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
-    http (1.0.2)
+    http (2.0.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
@@ -124,7 +124,7 @@ GEM
       phantomjs (>= 1.9)
       railties (>= 3.2.0)
       sprockets-rails
-    jbuilder (2.4.1)
+    jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.1.1)
@@ -268,7 +268,7 @@ DEPENDENCIES
   database_cleaner (~> 1.5.3)
   devise (~> 4.1.1)
   jasmine-rails (~> 0.12.4)
-  jbuilder (~> 2.4.1)
+  jbuilder (~> 2.5.0)
   jquery-rails (~> 4.1.1)
   minitest-rails-capybara (~> 2.1.2)
   mocha
@@ -286,4 +286,4 @@ DEPENDENCIES
   webmock (~> 2.0.3)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
