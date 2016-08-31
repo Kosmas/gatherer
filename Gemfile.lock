@@ -124,7 +124,7 @@ GEM
       phantomjs (>= 1.9)
       railties (>= 3.2.0)
       sprockets-rails
-    jbuilder (2.5.0)
+    jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.1.1)
@@ -158,7 +158,7 @@ GEM
       minitest-rails (~> 2.1)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
-    multi_json (1.11.2)
+    multi_json (1.12.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
     naught (1.1.0)
@@ -271,7 +271,7 @@ DEPENDENCIES
   database_cleaner (~> 1.5.3)
   devise (~> 4.2.0)
   jasmine-rails (~> 0.12.5)
-  jbuilder (~> 2.5.0)
+  jbuilder (~> 2.6.0)
   jquery-rails (~> 4.1.1)
   minitest-rails-capybara (~> 2.1.2)
   mocha
