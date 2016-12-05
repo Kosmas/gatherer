@@ -110,7 +110,7 @@ GEM
     gherkin (4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    hashdiff (0.3.0)
+    hashdiff (0.3.1)
     http (2.0.3)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -260,7 +260,7 @@ GEM
     vcr (3.0.3)
     warden (1.2.6)
       rack (>= 1.0)
-    webmock (2.1.0)
+    webmock (2.3.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -295,7 +295,7 @@ DEPENDENCIES
   twitter!
   uglifier (~> 3.0.4)
   vcr (~> 3.0.3)
-  webmock (~> 2.1.0)
+  webmock (~> 2.3.0)
 
 BUNDLED WITH
    1.12.5
