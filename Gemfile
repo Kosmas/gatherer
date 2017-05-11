@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.2'
+gem 'rails', '5.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.13'
 # Use SCSS for stylesheets
@@ -53,12 +53,14 @@ gem 'capybara', '~> 2.14.0', group: :test
 
 # Add cucumber
 group :development, :test do
-  gem 'cucumber-rails', '~> 1.4.5', require: false
+  #gem 'cucumber-rails', '~> 1.4.5', require: false
+  gem 'cucumber-rails', github: 'cucumber/cucumber-rails'
   gem 'database_cleaner', '~> 1.6.1'
 end
 
 # Add devise
-gem 'devise', '~> 4.2.1'
+#gem 'devise', '~> 4.3.0'
+gem 'devise', github: 'plataformatec/devise'
 
 # External service testing
 #gem 'twitter', github: 'sferik/twitter'
