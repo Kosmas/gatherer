@@ -58,8 +58,7 @@ group :development, :test do
 end
 
 # Add devise
-#gem 'devise', '~> 4.3.0'
-gem 'devise', github: 'plataformatec/devise'
+gem 'devise', '~> 4.3.0'
 
 # External service testing
 #gem 'twitter', github: 'sferik/twitter'
