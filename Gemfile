@@ -64,7 +64,7 @@ gem 'devise', '~> 4.4.0'
 #gem 'twitter', github: 'sferik/twitter'
 gem 'twitter', :git => 'https://github.com/sferik/twitter.git'
 gem 'vcr', '~> 4.0.0', group: :test
-gem 'webmock', '~> 3.1.1', group: :test
+gem 'webmock', '~> 3.2.1', group: :test
 
 # Add javascript testing
 group :development, :test do
