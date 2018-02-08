@@ -58,7 +58,7 @@ group :development, :test do
 end
 
 # Add devise
-gem 'devise', '~> 4.4.0'
+gem 'devise', '~> 4.4.1'
 
 # External service testing
 #gem 'twitter', github: 'sferik/twitter'
