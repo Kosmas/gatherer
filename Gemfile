@@ -41,7 +41,7 @@ gem 'spring', '~> 2.0.2', group: :development
 # Add RSpec
 group :development, :test do
   gem 'rspec-rails', '~> 3.7.2'
-  gem 'mocha', '~> 1.4.0', require: false
+  gem 'mocha', '~> 1.5.0', require: false
 end
 
 group :test do
