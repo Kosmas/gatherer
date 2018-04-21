@@ -268,7 +268,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.9)
+    uglifier (4.1.10)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
@@ -309,7 +309,7 @@ DEPENDENCIES
   sqlite3 (~> 1.3.13)
   turbolinks (~> 5.1.1)
   twitter!
-  uglifier (~> 4.1.9)
+  uglifier (~> 4.1.10)
   vcr (~> 4.0.0)
   webmock (~> 3.3.0)
 
