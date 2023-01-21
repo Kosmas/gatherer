@@ -79,7 +79,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.10)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
@@ -120,8 +120,8 @@ GEM
     execjs (2.7.0)
     ffi (1.11.1)
     gherkin (5.0.0)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
     hashdiff (0.3.7)
     http (3.0.0)
       addressable (~> 2.3)
@@ -132,7 +132,7 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.1.0)
     http_parser.rb (0.6.0)
-    i18n (1.6.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jasmine-core (2.99.2)
     jasmine-rails (0.14.7)
@@ -166,7 +166,7 @@ GEM
       rake
     mini_mime (1.0.2)
     mini_portile2 (2.8.0)
-    minitest (5.12.0)
+    minitest (5.17.0)
     minitest-capybara (0.8.2)
       capybara (~> 2.2)
       minitest (~> 5.0)
